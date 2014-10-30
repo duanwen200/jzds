@@ -175,7 +175,7 @@ void ChuangguanScene::startGame( CCObject* pSender )
 
 void ChuangguanScene::addPhysical( CCObject* pSender )
 {
-
+	CCDirector::sharedDirector()->replaceScene(Shop::scene());
 }
 
 void ChuangguanScene::speed( CCObject* pSender )

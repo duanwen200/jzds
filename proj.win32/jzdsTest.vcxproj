@@ -87,6 +87,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>libiconv.lib</AdditionalOptions>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -133,8 +134,10 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
   <ItemGroup>
     <ClCompile Include="..\Classes\BillboardScene.cpp" />
     <ClCompile Include="..\Classes\ChuangguanScene.cpp" />
+    <ClCompile Include="..\Classes\GBKTOUTF8.cpp" />
     <ClCompile Include="..\Classes\PauseScene.cpp" />
     <ClCompile Include="..\Classes\Quest.cpp" />
+    <ClCompile Include="..\Classes\rhythmInterface.cpp" />
     <ClCompile Include="..\Classes\setting.cpp" />
     <ClCompile Include="..\Classes\Shop.cpp" />
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
@@ -156,8 +159,10 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
   <ItemGroup>
     <ClInclude Include="..\Classes\BillboardScene.h" />
     <ClInclude Include="..\Classes\ChuangguanScene.h" />
+    <ClInclude Include="..\Classes\GBKTOUTF8.h" />
     <ClInclude Include="..\Classes\PauseScene.h" />
     <ClInclude Include="..\Classes\Quest.h" />
+    <ClInclude Include="..\Classes\rhythmInterface.h" />
     <ClInclude Include="..\Classes\setting.h" />
     <ClInclude Include="..\Classes\Shop.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
