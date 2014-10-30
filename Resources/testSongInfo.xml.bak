@@ -1,0 +1,26 @@
+<Game_Version version="1.0">
+    <song>
+        <songName>ssss</songName>
+        <musicTime>20</musicTime>
+        <mp3Seconds>20</mp3Seconds>
+        <background>bg2.png</background>
+        <key4Value>1234432112</key4Value>
+        <key5Value>1234554321</key5Value>
+        <key6Value>123456654321</key6Value>
+        <born4KeyType>1234567890</born4KeyType>
+        <born5KeyType>2345678901</born5KeyType>
+        <born6KeyType>345678901234</born6KeyType>
+    </song>
+    <song>
+        <songName>aaaa</songName>
+        <musicTime>20</musicTime>
+        <mp3Seconds>20</mp3Seconds>
+        <background>bg2.png</background>
+        <key4Value>1234432112</key4Value>
+        <key5Value>1234554321</key5Value>
+        <key6Value>123456654321</key6Value>
+        <born4KeyType>1234567890</born4KeyType>
+        <born5KeyType>2345678901</born5KeyType>
+        <born6KeyType>345678901234</born6KeyType>
+    </song>
+</Game_Version>
