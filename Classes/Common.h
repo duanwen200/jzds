@@ -74,6 +74,7 @@ public:
 	G_Info* g_info;
 	sVec   songNameVec;
 	int		billShow;
+	string GetInfoByKey(string fileName,string element,string key);
 private:
 	static SongSingleton* m_singleton;
 

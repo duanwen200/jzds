@@ -270,6 +270,27 @@ int SongSingleton::ReadXmlFile()
 	return 0;
 }
 
+string SongSingleton::GetInfoByKey(string fileinfo,string element,string key )
+{
+	string path = CCFileUtils::sharedFileUtils()->getWritablePath() + "test.xml";
+	//FILE* fp = fopen(path.c_str(),"wb+");
+	//fwrite(fileinfo.c_str(),1,fileinfo.length(),fp);
+	//fclose(fp);
+	tinyxml2::XMLDocument *pDoc = new tinyxml2::XMLDocument();
+	int error  = pDoc->Parse(fileinfo.c_str(),fileinfo.length());
+	//int error = pDoc->LoadFile(path.c_str());
+
+
+	XMLElement *rootEle = pDoc->RootElement();
+
+	//XMLElement *dicEle = rootEle->FirstChildElement(element.c_str());
+
+	XMLElement *keyEle = rootEle->FirstChildElement(key.c_str());
+
+	string infoString = keyEle->GetText();
+	return infoString;
+}
+
 int WriteXmlFile(S_Info g_info)
 {
 	std::string fileName = "testSongInfo.xml";
